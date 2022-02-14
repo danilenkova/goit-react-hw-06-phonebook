@@ -25,8 +25,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "set NODE_ENV=production&&gh-pages -d build",
-    "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
+    "start": "set NODE_ENV=production&&react-scripts start",
+    "start:dev": "set NODE_ENV=development&&react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
